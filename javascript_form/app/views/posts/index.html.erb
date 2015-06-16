@@ -1,0 +1,20 @@
+<h1>JS</h1>
+<ul id="posts">
+   <tr>
+   <td><%= render @posts %></td>
+</ul>
+
+
+<br>
+
+<b>
+
+<%= form_for(@post, remote: true) do |f| %>
+   <%= f.label :body %>
+   <%= f.text_field :body %>
+   <%= f.label :name %>
+   <%= f.text_field :name %>
+   <%= f.submit %>
+<% end %>
+
+</b>

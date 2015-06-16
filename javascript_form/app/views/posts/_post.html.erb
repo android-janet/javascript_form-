@@ -1,0 +1,4 @@
+<li> <%= post.body %></li>
+<li> <%= post.name %></li>
+<td> <%= button_to 'Like', like_post_path(post), remote: true %></td>
+<span id="like-<%= post.id %>"><td> <%= pluralize(post.likes.count, "like") %></td></span>
